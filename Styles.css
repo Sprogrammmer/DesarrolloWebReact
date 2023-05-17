@@ -1,6 +1,18 @@
-*{
-    background-color: lightpink;
-    font-family: 'Courier New', Courier, monospace;
+main, header{
+    padding-top: 5px;
+}
+
+header, main, footer{
+    background-color: pink;
+}
+
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+button{
+    margin-bottom: 20px;
 }
 
 .title{
@@ -14,6 +26,9 @@
     display: flex;
     justify-content: space-around;
     background-color: palevioletred;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
 }
 
 .navegacion li {
@@ -30,6 +45,22 @@
 h2{
     font-size: 20px;
     color: palevioletred;
+}
+
+.blog{
+    margin-left: 20px;
+}
+
+.me{
+    margin-left: 20px;
+}
+
+.contact{
+    margin-left: 20px;
+}
+
+.parrafo{
+    margin-left: 20px;
 }
 
 footer{
@@ -81,9 +112,303 @@ footer{
     grid-row: 5;
 }
 
+/*Estilos cards+++++++++++++++++++++++*/
+
+.container{
+    display: grid;
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    color: #151515;
+    perspective: 800px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 30px;
+    margin-right: -700px;
+}
+
+.card_inner{
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card_inner{
+    transform: rotateY(-180deg);
+}
+
+.card_side{
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 180px 1fr;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 10px
+        rgba(0, 0, 0, 0.15);
+}
+
+.card_side_back{
+    transform: rotateY(180deg);
+}
+
+.card_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_body{
+    padding: 16px;
+    font-size: 14px;
+}
+
+.card_body_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_title{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.card_arrow{
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+/*++++++++++++++*/
+
+.card1{
+    width: 200px;
+    height: 250px;
+    color: #151515;
+    perspective: 800px;
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 100px;
+}
+
+.card1_inner{
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card1:hover .card1_inner{
+    transform: rotateY(-180deg);
+}
+
+.card1_side{
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 180px 1fr;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 10px
+        rgba(0, 0, 0, 0.15);
+}
+
+.card1_side_back{
+    transform: rotateY(180deg);
+}
+
+.card_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card1_body{
+    padding: 16px;
+    font-size: 14px;
+}
+
+.card1_body_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card1_title{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.card1_arrow{
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+/**********************/
+
+.card2{
+    width: 200px;
+    height: 250px;
+    color: #151515;
+    perspective: 800px;
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 320px;
+}
+
+.card2_inner{
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card2:hover .card2_inner{
+    transform: rotateY(-180deg);
+}
+
+.card2_side{
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 180px 1fr;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 10px
+        rgba(0, 0, 0, 0.15);
+}
+
+.card2_side_back{
+    transform: rotateY(180deg);
+}
+
+.card_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2_body{
+    padding: 16px;
+    font-size: 14px;
+}
+
+.card2_body_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card2_title{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.card2_arrow{
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+/**********************/
+
+.card3{
+    width: 200px;
+    height: 250px;
+    color: #151515;
+    perspective: 800px;
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 540px;
+}
+
+.card3_inner{
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card3:hover .card3_inner{
+    transform: rotateY(-180deg);
+}
+
+.card3_side{
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 180px 1fr;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 10px
+        rgba(0, 0, 0, 0.15);
+}
+
+.card3_side_back{
+    transform: rotateY(180deg);
+}
+
+.card_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3_body{
+    padding: 16px;
+    font-size: 14px;
+}
+
+.card3_body_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card3_title{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.card3_arrow{
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+/*Responsive***************************/
 @media (max-width: 700px){
     .title{
         font-size: 20px;
+    }
+
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .navegacion ul{
@@ -96,6 +421,29 @@ footer{
         flex-direction: column;
         padding-left: 80px;
         padding-right: 80px;
+    }
+
+    .card1{
+        margin-left: 250px;
+    }
+    .card2{
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 29px;
+        margin-right: -700px;
+        margin-top: 20px;
+    }
+
+    .card3{
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 250px;
+        margin-right: -700px;
+        margin-top: 20px;
+    }
+
+    .navegacion ul{
+        padding: 5px;
     }
 }
 

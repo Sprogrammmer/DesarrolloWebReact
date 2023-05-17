@@ -9,39 +9,129 @@
 </head>
 <body>
     <header>
-      <h1 class="title">¡Hola! Soy Sara Gallego Sandoval</h1>
+      <h1 class="title">This is me</h1>
       <nav class="navegacion">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#seccion1">Inicio</a></li>
+          <li><a href="#seccion2">Blog</a></li>
+          <li><a href="#seccion3">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h2 class="about">Sobre Mí</h2>
-      <p>¡Bienvenidos a mi página web personal! Soy Sara, una apasionada de la tecnología y la programación. Me encanta crear cosas nuevas y explorar nuevas tecnologías. Actualmente estoy estudiando desarrollo de software en el Instituto Tecnológico Metropolitano (ITM).</p>
-      <p>En mi tiempo libre, me gusta leer sobre tecnología, escuchar música y hacer deporte. También me gusta jugar videojuegos y ver películas.</p>
+      <div class="me">
+        <h2 class="about" id="seccion1">Sobre Mí</h2>
+        <p>¡Bienvenidos a mi página web personal! Soy Sara, una apasionada de la tecnología y la programación. Me encanta crear cosas nuevas y explorar nuevas tecnologías. Actualmente estoy estudiando desarrollo de software en el Instituto Tecnológico Metropolitano (ITM).</p>
+        <p>En mi tiempo libre, me gusta leer sobre tecnología, escuchar música y hacer deporte. También me gusta jugar videojuegos y ver películas.</p>
+        <p><br></p>
+      </div>
+      <h2 class="blog" id="seccion2">Blog</h2>
+      <div class="container">
+        <article class="card">
+            <div class="card_inner">
+              <div class="card_side card_side_front">
+                <div class="card_image_wrapper">
+                  <img src="imagenes/addie.png" alt="" class="card_image">
+                </div>
+                <div class="card_body card_body_flex">
+                  <h2 class="card_title">libros</h2>
+                  <span class="card_arrow">&rarr;</span>
+                </div>
+              </div>
+              <div class="card_side card_side_back">
+                <div class="card_body">
+                  <p>La Vida Invisible de Addie LaRue, un libro lleno de magia, perfecto para aquellos que desean conocer una historia de esperanza, sacrificio y amor.</p>
+                  <p>"Ha descubierto que los libros son una forma de vivir mil vidas, o de hallar la fuerza en una muy larga".</p>
+                </div>
+              </div>
+            </div>
+          </article>
 
-      <h2 class="contact">Contacto</h2>
-      <p>Si desea ponerse en contacto conmigo, puede utilizar el siguiente formulario. ¡Espero saber de usted pronto!</p>
-      <form class="contacto">
-        <label for="name" class="nombre">Nombre:</label>
-        <input type="text" id="name" name="name" required class="txtnombre">
+          <article class="card1">
+            <div class="card1_inner">
+              <div class="card1_side card1_side_front">
+                <div class="card1_image_wrapper">
+                  <img src="imagenes/games.webp" alt="" class="card_image">
+                </div>
+                <div class="card1_body card1_body_flex">
+                  <h2 class="card1_title">videojuegos</h2>
+                  <span class="card1_arrow">&rarr;</span>
+                </div>
+              </div>
+              <div class="card1_side card1_side_back">
+                <div class="card1_body">
+                  <p>Apasionado de los videojuegos, disfruto explorando mundos virtuales y desafiando mis habilidades en emocionantes aventuras interactivas.</p>
+                  <p>Algunos de mis videojuegos favoritos son: GTA, Fifa, Crash y Mario Kart.</p>
+                </div>
+              </div>
+            </div>
+          </article>
 
-        <label for="email" class="correo">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required class="txtcorreo">
+          <article class="card2">
+            <div class="card2_inner">
+              <div class="card2_side card2_side_front">
+                <div class="card2_image_wrapper">
+                  <img src="imagenes/apple.jpg" alt="" class="card_image">
+                </div>
+                <div class="card2_body card2_body_flex">
+                  <h2 class="card2_title">Apple</h2>
+                  <span class="card2_arrow">&rarr;</span>
+                </div>
+              </div>
+              <div class="card2_side card2_side_back">
+                <div class="card2_body">
+                  <p>La elegancia y el rendimiento de Apple me fascinan. Su diseño innovador, la integración perfecta de sus dispositivos y la calidad de su software hacen que sea mi elección preferida.</p>
+                  <p>El iPhone original, lanzado en 2007, revolucionó la industria al introducir la pantalla táctil capacitiva.</p>
+                </div>
+              </div>
+            </div>
+          </article>
 
-        <label for="message" class="msn">Mensaje:</label>
-        <textarea id="message" name="message" rows="5" required class="txtmsn"></textarea>
+          <article class="card3">
+            <div class="card3_inner">
+              <div class="card3_side card3_side_front">
+                <div class="card3_image_wrapper">
+                  <img src="imagenes/javascript.jpg" alt="" class="card_image">
+                </div>
+                <div class="card3_body card3_body_flex">
+                  <h2 class="card3_title">JavaScript</h2>
+                  <span class="card3_arrow">&rarr;</span>
+                </div>
+              </div>
+              <div class="card3_side card3_side_back">
+                <div class="card3_body">
+                  <p>JavaScript fue creado en 1995 por Brendan Eich en solo 10 días. Originalmente llamado "LiveScript", su nombre se cambió por "JavaScript" para capitalizar la popularidad de Java en ese momento. <br> Hoy en día, es uno de los lenguajes de programación más utilizados en el desarrollo web.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+      </div>
 
-        <button type="submit">Enviar</button>
-      </form>
+      <div>
+        <p><br></p>
+        <h2 class="contact" id="seccion3">Contacto</h2>
+        <p class="parrafo">Si desea ponerse en contacto conmigo, puede utilizar el siguiente formulario. ¡Espero saber de usted pronto!</p>
+
+        <form class="contacto" id="formulario">
+          <label for="name" class="nombre">Nombre:</label>
+          <input type="text" id="name" name="name" required class="txtnombre">
+
+          <label for="email" class="correo">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required class="txtcorreo">
+
+          <label for="message" class="msn">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required class="txtmsn"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
     </main>
 
     <footer>
       <p>Derechos Reservados &copy; 2023 Sara Gallego Sandoval</p>
+      <p><br></p>
     </footer>
+
+    <script src="DOM.js"></script>
 </body>
 </html>
